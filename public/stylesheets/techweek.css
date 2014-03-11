@@ -1,0 +1,33 @@
+.timeslot .header {
+	font-size:18px;
+	font-weight:bold;
+}
+
+.date .day{
+	font-style:italic;
+	font-size:10px;
+}
+
+.timeslot .detail{
+	font-size:12px;
+}
+
+.timeslot .timespan{
+	font-weight:bold;
+	font-size:13px;
+}
+.timeslot .subject{
+	font-style:italic;
+	font-size:12px;
+}
+
+.timeslot .instructor{
+	position:relative;
+	margin:10px;
+	font-size:12px;
+}
+
+.timeslot{
+	position:relative;
+	margin:10px;
+}

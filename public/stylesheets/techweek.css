@@ -31,3 +31,17 @@
 	position:relative;
 	margin:10px;
 }
+
+.header .techweeklogo{
+	width:400px;
+	height:70px;
+	position:relative;
+	margin:0 auto;
+	
+}
+
+.header{
+	height:100px;
+	width:100%;
+	position:relative;
+}

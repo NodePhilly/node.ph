@@ -33,15 +33,12 @@ body {
 .date .day{
 	font-style:italic;
 	font-weight:bold;
-<<<<<<< HEAD
 	font-size:28px;
 	color:rgb(210, 63, 55);
 
 }
 
 .date {
-=======
->>>>>>> techweek
 	font-size:36px;
 	color:rgb(210, 63, 55);
 
@@ -62,10 +59,6 @@ body {
 	float:left;
 	margin-right:20px;
 	padding:0px;
-<<<<<<< HEAD
->>>>>>> techweek
-=======
->>>>>>> techweek
 }
 
 .timeslot .detail{
@@ -74,7 +67,6 @@ body {
 
 .timeslot .timespan{
 	font-weight:bold;
-<<<<<<< HEAD
 	font-size:20px;
 }
 .timeslot .subject{
@@ -83,8 +75,6 @@ body {
 }
 
 .timeslot .header{
-=======
->>>>>>> techweek
 	font-size:24px;
 	margin-bottom:10px;
 }
@@ -134,7 +124,7 @@ body {
 .instructor {
 	margin-top:20px;
 }
-<<<<<<< HEAD
+
 .instructor .name{
 	font-weight:bold;
 	color:rgb(0,0,0);
@@ -162,9 +152,6 @@ body {
 .instructor {
 	margin-top:20px;
 }
-=======
->>>>>>> techweek
-
 .instructor .name{
 	font-size:24px;
 	font-weight:bold;
@@ -181,10 +168,6 @@ a{
 	text-decoration:none;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> techweek
 .headersection{
 	height:200px;
 	width:60%;

@@ -43,6 +43,10 @@ body {
 	color:rgb(210, 63, 55);
 
 }
+
+.timeslot{
+	color:rgb(43,43,43);
+}
 .instructor{
 	height:150px;
 	width:100%;

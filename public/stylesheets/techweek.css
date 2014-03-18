@@ -1,33 +1,106 @@
+body {
+	font-family:'Josefin Slab', serif;;
+	margin:0px;
+	padding:0px;
+	font-size:20px;
+	background-color:rgb(43,43,43);
+	padding-top:20px;
+}
 .timeslot .header {
 	font-size:18px;
 	font-weight:bold;
 }
+.grayShiz{
+	background-color:rgb(247,247,247);
+	color:rgb(43,43,43);
+	padding:10px;
 
+}
+.blackShiz{
+	background-color:rgb(43,43,43);
+	color:rgb(208,208,208);
+	padding:10px;
+
+}
+.contentYo .indent{
+	margin-top:-50px;
+	text-indent:210px;
+}
+.contentYo{
+		width:60%;
+	margin:0 auto;
+}
 .date .day{
 	font-style:italic;
-	font-size:10px;
+	font-weight:bold;
+	font-size:28px;
+	color:rgb(210, 63, 55);
+
+}
+
+.date {
+	
 }
 
 .timeslot .detail{
-	font-size:12px;
+	font-size:18px;
 }
 
 .timeslot .timespan{
 	font-weight:bold;
-	font-size:13px;
+	font-size:20px;
 }
 .timeslot .subject{
 	font-style:italic;
-	font-size:12px;
+	font-size:18px;
+}
+
+.timeslot .header{
+
+	color:rgb(220, 83, 75);
 }
 
 .timeslot .instructor{
 	position:relative;
-	margin:10px;
-	font-size:12px;
+	font-size:18px;
 }
 
 .timeslot{
 	position:relative;
 	margin:10px;
+	border-bottom:1px solid rgb(198,198,198);
+	padding-bottom:10px;
+}
+
+.headersection{
+		position:relative;
+	margin:0 auto;
+}
+.headersection .techweeklogo{
+	width:400px;
+	height:70px;
+	float:right;
+	margin-top:65px;
+}
+
+.headersection .nodelogo{
+	float:left;
+	height:200px;
+	width:200px;
+	position:relative;
+
+}
+
+.instructor {
+	margin-top:20px;
+}
+.instructor .name{
+	font-weight:bold;
+	color:rgb(0,0,0);
+}
+.headersection{
+	height:200px;
+	width:60%;
+	margin:0 auto;
+	position:relative;
 }

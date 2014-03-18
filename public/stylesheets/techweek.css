@@ -39,7 +39,27 @@ body {
 }
 
 .date {
-	
+	font-size:36px;
+	color:rgb(210, 63, 55);
+
+}
+.instructor{
+	height:150px;
+	width:100%;
+	position:relative;
+	display:block;
+}
+.instructor .detiails{
+	float:left;
+}
+.instructor .pic {
+	height:150px;
+	width:131px;
+	border:1px solid rgb(43,43,43);
+	float:left;
+	margin-right:20px;
+	padding:0px;
+>>>>>>> techweek
 }
 
 .timeslot .detail{
@@ -56,7 +76,18 @@ body {
 }
 
 .timeslot .header{
+	font-size:24px;
+	margin-bottom:10px;
+}
+.timeslot .subject{
+	font-style:italic;
+	font-weight:bold;
+	font-size:20px;
+	margin-bottom:10px;
+}
 
+.timeslot .header{
+	font-size:22px;
 	color:rgb(220, 83, 75);
 }
 
@@ -98,6 +129,46 @@ body {
 	font-weight:bold;
 	color:rgb(0,0,0);
 }
+
+.headersection{
+		position:relative;
+	margin:0 auto;
+}
+.headersection .techweeklogo{
+	width:400px;
+	height:70px;
+	float:right;
+	margin-top:65px;
+}
+
+.headersection .nodelogo{
+	float:left;
+	height:200px;
+	width:200px;
+	position:relative;
+
+}
+
+.instructor {
+	margin-top:20px;
+}
+
+.instructor .name{
+	font-size:24px;
+	font-weight:bold;
+	margin-bottom:10px;
+	color:rgb(0,0,0);
+}
+.instructor .twitter{
+	font-size:20px;
+	margin-bottom:10px;
+	text-decoration:none;
+}
+
+a{
+	text-decoration:none;
+}
+
 .headersection{
 	height:200px;
 	width:60%;

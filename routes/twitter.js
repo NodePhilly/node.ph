@@ -4,13 +4,14 @@
  */
 exports.tweets = function(req, res){
     var twit = require('twit');
+    var twitconfig = require('../twitter_cred.json');
 
     var t = new twit(
         {
-            consumer_key:'JhNVwgWLMwaqR8pglFLbQ',
-            consumer_secret:'LB4NNhUkWvTTBUe9A6i1xOPSmmLtquRZIKvxp2genwU',
-            access_token:'126735617-g5CyGPPrb9jnbHzfmbgn4zNDZM5VNiBDN0dvK4TZ',
-            access_token_secret:'UMdk9L0K3cYsHLGxepYb7gWkJF8x6tJmKDi6BIrzc'
+            consumer_key:twitconfig.consumer_key,
+            consumer_secret:twitconfig.consumer_secret,
+            access_token:twitconfig.access_token,
+            access_token_secret:twitconfig.access_token_secret
         }
     );
 
@@ -18,14 +19,35 @@ exports.tweets = function(req, res){
             if (err)
                 console.log("Error: " + err);
             else {
+                var tweets = [];
+                var tweetpics = [];
                 for (index = 0; index < response.length; ++index) {
-                    console.log(response[index].created_at);
-                    console.log(response[index].text);
+                    tweets.push({
+                        created_at: response[index].created_at,
+                        text: response[index].text
+                    });
+                    if (response[index].entities.media != undefined) {
+                        tweetpics.push({
+                            created_at: response[index].created_at,
+                            text: response[index].text,
+                            media: response[index].entities.media[0].media_url
+                        })
+                    }
                 }
             }
-            return response;
+            console.log(tweets);
+            console.log(tweetpics);
+            //res.send(tweetpics);
+            res.render('twitter', { tweets: tweets, tweetpics: tweetpics });
         }
     );
-
-    res.send(response);
 };
+
+
+
+function parseCreatedDate(date)
+{
+    var date = new Date(date);
+    console.log(date);
+    //return date.substr(0, 11) + ' ' + hour + ':' + date.substr(13) + ampm;
+}

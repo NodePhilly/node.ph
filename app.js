@@ -1,16 +1,7 @@
-
-/**
- * Module dependencies.
- */
-
 var express = require('express');
 var routes = require('./routes');
-var user = require('./routes/user');
-var event = require('./routes/event');
-var twitter = require('./routes/twitter');
 var http = require('http');
 var path = require('path');
-var techweek = require('./routes/techweek');
 
 var app = express();
 
@@ -32,12 +23,8 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', techweek.index);
-app.get('/home', routes.index);
-app.get('/users', user.list);
-app.get('/events', event.events);
-app.get('/twitter', twitter.tweets);
-app.get('/phillytechweek', techweek.index)
+app.get('/', routes.index);
+app.get('/sponsor', routes.sponsor);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

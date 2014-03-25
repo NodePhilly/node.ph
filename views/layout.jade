@@ -2,12 +2,22 @@ doctype html
 html
   head
     title= title
+    link(href='http://fonts.googleapis.com/css?family=Josefin+Slab:300' rel='stylesheet' type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Josefin+Slab:700' rel='stylesheet' type='text/css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='/stylesheets/jquery.fullPage.css')
-    link(rel='stylesheet', href='/stylesheets/techweek.css')
-    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
-    script(src='/javascripts/jquery.fullPage.js')
-    script(src='/javascripts/straightforward.js')
 
-  body
-    block content
+body
+  .headersection
+    .nodelogo
+      img(src='/images/yo-philly-nodes.png', height=200, width=200)
+    .techweeklogo
+      img(src='/images/ptw2014-logo-att.png', height=70, width=400)
+  .section
+    .blackShiz
+      .contentYo
+        block header-content
+    .grayShiz
+      .contentYo
+        block body-content
+    .blackShiz
+      block footer-content

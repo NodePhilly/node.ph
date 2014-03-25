@@ -5,7 +5,7 @@ exports.index = function (req, res){
     });
   } else {
     res.render('sponsor', {
-      publishableKey: 'pk_test_sW4GNqFfDoNHa4uZH05BIU4w'
+      publishableKey: 'pk_live_MQhN5CuHpu9maQ07HQlVpFMB'
     });
   }
 };

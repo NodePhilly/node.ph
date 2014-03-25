@@ -6,7 +6,7 @@ $(function () {
     };
 
     StripeCheckout.open({
-      key: 'pk_test_sW4GNqFfDoNHa4uZH05BIU4w',
+      key: 'pk_live_MQhN5CuHpu9maQ07HQlVpFMB',
       address: true,
       amount: $('select[name="amount"]').val(),
       name: 'Node Philly Sponsorship',

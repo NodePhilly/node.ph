@@ -1,12 +1,12 @@
-$(function() {
-  $('#pay').click(function() {
+$(function () {
+  $('#pay').click(function () {
     var token = function(res){
       var $input = $('<input type="hidden" name="stripeToken" />').val(res.id);
       $('form').append($input).submit();
     };
 
     StripeCheckout.open({
-      key: 'pk_live_MQhN5CuHpu9maQ07HQlVpFMB',
+      key: 'pk_test_sW4GNqFfDoNHa4uZH05BIU4w',
       address: true,
       amount: $('select[name="amount"]').val(),
       name: 'Node Philly Sponsorship',

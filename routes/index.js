@@ -4,8 +4,4 @@ exports.index = function (req, res) {
   });
 };
 
-exports.sponsor = function (req, res) {
-  res.render('sponsor', {
-    title: 'Node Philly 2014 :: Sponsorship'
-  });
-};
+exports.sponsor = require('./sponsor');

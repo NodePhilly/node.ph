@@ -1,6 +1,6 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
+  "name": "node.ph",
+  "version": "0.3.0",
   "private": true,
   "scripts": {
     "start": "node app.js"
@@ -10,5 +10,13 @@
     "jade": "*",
     "stylus": "*",
     "stripe": "~2.4.2"
+  },
+  "subdomain": "nodephilly",
+  "domains": [
+    "www.node.ph",
+    "node.ph"
+  ],
+  "engines": {
+    "node": "0.10.x"
   }
 }

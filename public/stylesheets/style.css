@@ -27,7 +27,7 @@ body {
   text-indent:210px;
 }
 .contentYo{
-    width:750px;
+  width:750px;
   margin:0 auto;
 }
 
@@ -35,22 +35,22 @@ body {
   width:600px;
   margin:0 auto;
 }
+
 .date .day{
   font-style:italic;
   font-size:28px;
   color:rgb(210, 63, 55);
-
 }
 
 .date {
   font-size:36px;
   color:rgb(210, 63, 55);
-
 }
 
 .timeslot{
   color:rgb(43,43,43);
 }
+
 .instructor{
   min-height:150px;
   width:100%;
@@ -79,6 +79,7 @@ body {
   font-size:24px;
   margin-bottom:20px;
 }
+
 .timeslot .subject{
   clear:both;
   font-weight:bold;
@@ -107,10 +108,12 @@ body {
 .timeslot.last{
   border:none;
 }
+
 .headersection{
-    position:relative;
+  position:relative;
   margin:0 auto;
 }
+
 .headersection .techweeklogo{
   width:400px;
   height:70px;
@@ -123,24 +126,22 @@ body {
   height:200px;
   width:200px;
   position:relative;
-
 }
 
 .instructor {
   padding-bottom:10px;
   margin-top:20px;
-
 }
 
 .instructor.conference{
-    border-bottom:1px solid rgb(230, 230, 230);
+  border-bottom:1px solid rgb(230, 230, 230);
 }
 .instructor .name{
   color:rgb(0,0,0);
 }
 
 .headersection{
-    position:relative;
+  position:relative;
   margin:0 auto;
 }
 .headersection .techweeklogo{
@@ -155,7 +156,6 @@ body {
   height:200px;
   width:200px;
   position:relative;
-
 }
 
 .instructor {
@@ -210,9 +210,6 @@ a.partner{
   background-position: 0 -25px;
 }
 
-a.partner:hover{
-  background-color:rgb(53,53,53);
-}
 .headersection{
   height:200px;
   width:60%;

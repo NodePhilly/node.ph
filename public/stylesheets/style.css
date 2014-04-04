@@ -8,6 +8,11 @@ body {
   background-color:rgb(43,43,43);
   padding-top:20px;
 }
+
+h2 {
+  line-height: 40px;
+}
+
 .timeslot .header {
   font-size:18px;
 
@@ -182,7 +187,7 @@ a{
 
 a.partner[name='chathamfinancial']
 {
-  background-image:url('../images/chathamlogo.png');
+  background-image:url('../images/chatham.png');
 }
 
 a.partner[name='strongloop']
@@ -198,6 +203,11 @@ a.partner[name='quorum']
 a.partner[name='leadnomics']
 {
   background-image:url('../images/leadnomics.png');
+}
+
+a.partner[name='comcast']
+{
+  background-image:url('../images/comcast.png');
 }
 
 a.partner{

@@ -26,3 +26,5 @@ node_modules
 
 #ide directory 
 .idea
+.DS_Store
+.DS_Store

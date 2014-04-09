@@ -210,6 +210,11 @@ a.partner[name='comcast']
   background-image:url('../images/comcast.png');
 }
 
+a.partner[name='zivtech']
+{
+  background-image:url('../images/zivtech.png');
+}
+
 a.partner{
   width: 300px;
   height: 100px;

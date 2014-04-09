@@ -1,0 +1,220 @@
+/*
+Theme Name:     2012 webapplog
+Theme URI:      http://webapplog.com
+Description:    Child theme for the Twenty Twelve theme
+Author:         Azat Mardanov
+Author URI:     http://webapplog.com/about
+Template:       twentytwelve
+Version:        0.1.0
+*/
+@import url("../twentytwelve/style.css");
+/*@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,300,300italic,700italic);*/
+@import url("http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,300,300italic,700italic|Open+Sans:400italic,700italic,400,600,800");
+
+body.custom-font-enabled {
+	font-family: 'Merriweather',"Open Sans", Helvetica, Arial, serif;
+	font-size:14pt;
+	/*font-color:#0E0D0D;	*/
+}
+body {
+	/*background-image: url('http://www.webapplog.com/wp-content/uploads/bg3.jpeg');*/
+}
+h1,h2,h3, #menu-main-menu {
+	font-family: 'Open Sans', sans-serif;
+}
+header.entry-header h1.entry-title {
+	font-size:2em;
+	font-weight: 800;
+}
+.site-title {
+	font-weight: 800;
+}
+.site-description {
+	font-weight: 400;
+}
+.site-header {
+	padding-top:48px;
+	padding-top:4rem;
+}
+div.entry-content h2 {
+	font-size: 1.5em;
+	font-weight: 600;
+}
+#secondary {
+	width: 200px;
+}
+@media screen and (max-width: 500px) {
+	body {
+		padding-top: 81px;
+	}
+	#wnb-bar {
+		height: 66px;
+	}
+}
+@media screen and (min-width: 500px) and (max-width: 800px) {
+	body {
+		padding-top: 48px;
+	}
+	#wnb-bar {
+		height: 33px;
+	}
+}
+/*@media screen and (min-width: 960px) {
+	body {
+		padding-top: 0px;
+	}
+	#wnb-bar {
+		height: 33px;
+	}
+}*/
+/*font-family: 'Open Sans Condensed', sans-serif;*/
+#menu-main-menu li {
+	font-size: 16pt;
+}
+#menu-main-menu li a:hover {
+	/*background-color: #B6B4B4;*/
+	color: #000000;
+}
+
+#menu-main-menu .rss,#menu-main-menu  .twitter,#menu-main-menu  .facebook {
+	margin: 0;
+	float: right;
+}
+#menu-main-menu li.facebook a:hover,#menu-main-menu li.twitter a:hover ,#menu-main-menu li.rss a:hover  {
+	background-color: #B6B4B4;
+}
+#menu-main-menu li.facebook a {
+	background-image: url(img/facebook.png);
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	width: 77px;
+	padding: 0;
+	background-position: 20px;
+}
+#menu-main-menu li.rss a {
+	background-image: url(img/rss.png);
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	width: 77px;
+	padding: 0;
+	background-position: 20px;
+}
+#menu-main-menu li.twitter a {
+	background-image: url(img/twitter.png);
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	width: 77px;
+	padding: 0;
+	background-position: 20px;
+}
+/*
+#menu-main-menu li.facebook a, #menu-main-menu li.twitter a, #menu-main-menu li.rss a {
+	background: transparent url(/wp-content/themes/twentyeleven/images/social-sprite.png) 0 0 no-repeat;
+	padding: 0;
+	text-indent: -9999px;
+	width: 70px;
+}
+#menu-main-menu li.twitter, #menu-main-menu li.rss, #menu-main-menu li.facebook {float:right; margin:0;}
+#menu-main-menu li.rss a {background-position:0 0}
+#menu-main-menu li.facebook a {background-position:0 -96px}
+#menu-main-menu li.twitter a {background-position:0 -48px}
+#menu-main-menu li.rss a:hover, #menu-main-menu li.rss a:focus, #menu-main-menu li.rss a:active {background:transparent url(/wp-content/themes/twentyeleven/images/social-sprite.png) 0 -144px no-repeat}
+#menu-main-menu li.twitter a:hover, #menu-main-menu li.twitter a:focus, #menu-main-menu li.twitter a:active {background:transparent url(/wp-content/themes/twentyeleven/images/social-sprite.png) 0 -192px no-repeat}
+#menu-main-menu li.facebook a:hover, #menu-main-menu li.facebook a:focus, #menu-main-menu li.facebook a:active {background:transparent url(/wp-content/themes/twentyeleven/images/social-sprite.png) 0 -240px no-repeat}
+*/
+#respond form input[type=text] {
+	width:100%;
+}
+input[type=checkbox] {
+	margin-top:1em;
+}
+#respond label#captcha_code_label {
+	display: inline;
+}
+body.home div#primary {
+	max-width: 1035px;
+	max-width: 73.92857143rem;
+}
+#primary {
+	width: 700px;
+}
+#masthead > a {
+	float:left;
+	margin-right:1rem;
+}
+#masthead hgroup {
+	float:left;
+	display: block;
+}
+@media screen and (max-width: 600px) {
+	#masthead hgroup {
+		display: none;
+	}
+	#menu-main-menu li.facebook, #menu-main-menu li.twitter, #menu-main-menu li.rss {
+		display: none;
+	}
+	.site-header{
+		padding-top: 0;
+	}
+}
+#masthead hgroup h1, #masthead hgroup h2 {
+	/*display: inline;*/
+}
+#masthead hgroup h2 {
+	margin-bottom: 1rem;
+	line-height:1.446153846rem;
+}
+#masthead img.header-image {
+	/*border:none;*/
+	margin-top:15px;
+	margin-top: 1.07142857rem;
+}
+.site-content article {
+	border-bottom: 1px dashed #ECECEC;
+}
+.entry-content pre, .comment-content pre {
+	border:none;
+}
+
+.textwidget #buygumroad.gumroad-button {
+	/*background-color: #AF095C !important;*/
+	background-color: #BF2626 !important;
+	/*color: #110E0E !important;*/
+	color: #FFFFFF !important;
+	text-shadow: 0 1px 2px #BF2626 !important;
+	padding-left: 0 !important;
+	text-align: center !important;
+	background-image: none !important;
+	/*text-shadow: 0 1px 2px #944158 !important;*/
+}
+.featured-post:after {
+    content: "Express.js Guide";
+    font-size: 12px;
+    line-height: 2.6em;
+}
+#wnb-bar {
+	/*border-bottom: 1px solid #FFF;*/
+	font-family: 'Open Sans', sans-serif;
+}
+#wnb-bar a {
+	top: -2px;
+	position: relative;
+}
+code {
+	padding:0px;
+}
+code[class] {
+	padding:12px;
+}
+pre  code {
+	padding:12px;
+}
+.entry-content code, .comment-content code {
+	font-size:14pt;
+}
+.entry-content pre code {
+	font-size: 10pt;
+}
+.entry-content a:visited, .comment-content a:visited {
+	color: #21759B;
+}

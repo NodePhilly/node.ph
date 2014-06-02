@@ -1,7 +1,18 @@
-var express = require('express');
-var routes = require('./routes');
+
+
+/**
+ * Module dependencies.
+ */
+
 var http = require('http');
 var path = require('path');
+var express = require('express');
+var routes = require('./routes');
+var event = require('./routes/event');
+var twitter = require('./routes/twitter');
+var techweek = require('./routes/techweek');
+
+
 
 var app = express();
 
@@ -19,16 +30,19 @@ app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
-if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
+if ('development' === app.get('env')) {
+    app.use(express.errorHandler());
 }
 
 app.get('/', routes.index);
-app.get('/sponsor', routes.sponsor.index);
-app.post('/sponsor/charge', routes.sponsor.charge);
-app.get('/sponsor/charge/success', routes.sponsor.chargeSuccess);
-app.get('/sponsor/charge/error', routes.sponsor.chargeError);
 
-http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
+//app.get('/home', routes.index);
+app.get('/events', event.events);
+app.get('/tweets', twitter.tweets);
+app.get('/tweetpics', twitter.tweetpics);
+app.get('/phillytechweek', techweek.index);
+
+
+http.createServer(app).listen(app.get('port'), function () {
+    console.log('Express server listening on port ' + app.get('port'));
 });

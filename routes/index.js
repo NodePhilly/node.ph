@@ -1,7 +1,6 @@
-exports.index = function (req, res) {
-  res.render('index', {
-    title: 'Node Philly 2014'
-  });
+/*
+ * GET home page.
+ */
+exports.index = function(req, res){
+    res.render('index', { title: 'Express' });
 };
-
-exports.sponsor = require('./sponsor');

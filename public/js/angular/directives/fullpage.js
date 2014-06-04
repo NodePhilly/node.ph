@@ -3,7 +3,9 @@ angular.module('nodeapp')
   return{
     restrict:'A',
     link: function(scope, element, attrs){
-        $("#fullpage").fullpage({navigation:true});
+        $("#fullpage").fullpage({easing:'linear',
+         scrollingSpeed:400,
+         slidesColor:['black', '#cccccc']});
     }
   }
 });

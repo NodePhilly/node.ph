@@ -3,7 +3,7 @@ angular.module('nodeapp')
   return{
     restrict:'A',
     link: function(scope, element, attrs){
-        element.fullpage({navigation:true});
+        $("#fullpage").fullpage({navigation:true});
     }
   }
 });

@@ -1,11 +1,11 @@
 extends layout
 
 block content
-    #fullpage(np-full-page)
-        .section#section0
-            img(src='/images/nodephlogo-word.png' class='homelogo')
-            p its a block yo
-        .section#section1
-            div.fullpageSection(np-about-section)
-        .section#section2
-            div(np-contact-section)
+  #fullpage(np-full-page)
+    .section#section0(style="background-image: url(/images/homepageimages/#{titleImageUrl})")
+      img(src='/images/nodephlogo-word.png' class='homelogo')
+      p its a block yo
+    .section#section1
+      div.fullpageSection(np-about-section)
+    .section#section2
+      #contactSection(np-contact-section)

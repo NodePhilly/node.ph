@@ -1,1 +1,6 @@
-h2 {{ContactData.Message}}
+#leftPanel
+    #contactBlurb
+        {{ContactData.DisplayMessage}}
+    a(ng-repeat="link in ContactData.Links", href="{{link.Link}}") {{link.Display}}
+    a(href="{{ContactData.DonateButton.Link}}") {{ContactData.DonateButton.Display}}
+#rightPanel

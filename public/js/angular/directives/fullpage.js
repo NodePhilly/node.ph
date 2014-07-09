@@ -14,4 +14,10 @@ angular.module('nodeapp')
 		templateUrl: '/contact',
 		controller: 'ContactCtrl'
 	}
+}).directive('npAboutSection', function(){
+  return{
+    restrict:'A',
+    templateUrl:'/about',
+    controller:'AboutCtrl'
+  }
 });

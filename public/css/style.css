@@ -4,3 +4,16 @@
 #section0, #section1{
   color:white;
 }
+.contentSection, .fullpageSection{
+  height:100%;
+}
+.innerContentSection{
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.picture{
+  width:50%;
+  float:left;
+  height:50%;
+}

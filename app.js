@@ -11,7 +11,7 @@ var routes = require('./routes');
 var event = require('./routes/event');
 var twitter = require('./routes/twitter');
 var techweek = require('./routes/techweek');
-
+var contact = require('./routes/contact');
 
 
 var app = express();
@@ -41,7 +41,7 @@ app.get('/events', event.events);
 app.get('/tweets', twitter.tweets);
 app.get('/tweetpics', twitter.tweetpics);
 app.get('/phillytechweek', techweek.index);
-
+app.get('/contact', contact.index);
 
 http.createServer(app).listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));

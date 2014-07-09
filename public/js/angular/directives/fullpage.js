@@ -8,4 +8,10 @@ angular.module('nodeapp')
          slidesColor:['black', '#cccccc']});
     }
   }
+}).directive('npContactSection', function(){
+	return{
+		restrict:'A',
+		templateUrl: '/contact',
+		controller: 'ContactCtrl'
+	}
 });

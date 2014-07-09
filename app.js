@@ -12,7 +12,7 @@ var event = require('./routes/event');
 var twitter = require('./routes/twitter');
 var techweek = require('./routes/techweek');
 var contact = require('./routes/contact');
-
+var sponsor = require('./routes/sponsor');
 
 var app = express();
 
@@ -36,7 +36,7 @@ if ('development' === app.get('env')) {
 
 app.get('/', routes.index);
 
-//app.get('/home', routes.index);
+app.get('/sponsor', sponsor.index);
 app.get('/events', event.events);
 app.get('/tweets', twitter.tweets);
 app.get('/tweetpics', twitter.tweetpics);

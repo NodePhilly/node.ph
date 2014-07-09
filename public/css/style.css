@@ -4,3 +4,17 @@
 #section0, #section1{
   color:white;
 }
+
+#contactSection{
+	height:100%;
+}
+
+#leftPanel{
+	width:40%;
+	float:left;
+}
+
+#rightPanel{
+	width:60%;
+	float:left;
+}
